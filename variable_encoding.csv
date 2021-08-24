@@ -1,4 +1,9 @@
 orig_var,orig_level,new_var,new_level,notes
+FACILITY_DISPLAY_ID,NA,facility_display_id,NA,"Type: ID"
+PATIENT_DISPLAY_ID,NA,patient_display_id,NA,"Type: ID"
+CASE_ID,NA,case_id,NA,"Type: ID"
+AHA_ID,NA,aha_id,NA,"Type: ID"
+ADMDT,NA,admission_date,NA,"Type: Date"
 AGEi,NA,age_years,NA,
 SEXi,1,sex_male,1,
 SEXi,2,sex_male,0,"'Unknown' sex is SEXi=3 but not used here"
