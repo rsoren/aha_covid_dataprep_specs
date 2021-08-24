@@ -15,14 +15,16 @@ RACEi,5,race,"Pacific Islander",Categorical,
 RACEi,6,race,"Non-Hispanic White",Categorical,
 RACEi,7,race,"Unable to be Determined",Categorical,
 BMIadmit,NA,bmi,NA,Continuous,
-MEDHISTO_01,,medhist_afib,,"Binary","Already in '1=yes;0=no' format"
-MEDHISTO_02,,medhist_flutter,,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_01,NA,medhist_afib,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_02,NA,medhist_flutter,NA,"Binary","Already in '1=yes;0=no' format"
 AFIBPRES,1,during_afib,1,"Categorical",
-AFIBPRES,2,during_afib,0,"Categorical",
-AFIBPRESDT,,,,"Date",
-MEDHISTO_19,,,,"Binary","Already in '1=yes;0=no' format"
-MEDHISTO_27,,,,"Binary","Already in '1=yes;0=no' format"
-DVTDT,,,,"Date",
+AFIBPRES,2,during_afib,0,"Categorical","Original 'AFIBPRES==2' represents 'No/ND'"
+AFIBPRESDT,NA,during_afib_date,NA,"Date",
+MEDHISTO_19,NA,medhist_dvt,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_27,NA,medhist_pe,NA,"Binary","Already in '1=yes;0=no' format"
+DVT,1,during_dvt,1,"Binary",
+DVT,2,during_dvt,0,"Binary","Original 'DVT==2' represents 'No/ND'"
+DVTDT,NA,during_dvt_date,NA,"Date",
 ANTICOAG,,,,,
 ANTCOGDVTPRO,,,,,
 SUBQLMWHLWDOS,,,,,
