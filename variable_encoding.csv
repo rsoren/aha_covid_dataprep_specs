@@ -6,7 +6,7 @@ AHA_ID,NA,aha_id,NA,"ID",
 ADMDT,NA,admission_date,NA,"Date",
 AGEi,NA,age_years,NA,Integer,
 SEX,1,sex_male,1,Binary,
-SEX,2,sex_male,0,Binary,"'Unknown' sex is SEXi=3 but not used here"
+SEX,2,sex_male,0,Binary,"Original 'SEX==3' represents 'Unknown'; not used here"
 RACEi,1,race,"Hispanic",Categorical,
 RACEi,2,race,"Non-Hispanic Black",Categorical,
 RACEi,3,race,"Native American",Categorical,
