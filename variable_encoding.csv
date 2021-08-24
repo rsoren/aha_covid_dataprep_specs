@@ -29,11 +29,16 @@ ANTICOAG,1,prior_anticoag,1,"Binary",
 ANTICOAG,2,prior_anticoag,0,"Binary","Original level 2 represents 'No/ND'"
 ANTCOGDVTPRO,1,during_anticoag_for_dvt,1,"Binary",
 ANTCOGDVTPRO,2,during_anticoag_for_dvt,0,"Binary", "Original level 3 represents 'NC'; not used here"
-SUBQLMWHLWDOS,,,,,
-SUBQLMWHINTRDOS,,,,,
-SUBQLMWHTHRPDOS,,,,,
-SUBQUFH,,,,,
-PARNTLUFH,,,,,
+SUBQLMWHLWDOS,1,during_subq_lmwh_low,1,"Binary",
+SUBQLMWHLWDOS,2,during_subq_lmwh_low,0,"Binary", "Original level 3 represents 'NC'; not used here"
+SUBQLMWHINTRDOS,1,during_subq_lmwh_intermediate,1,"Binary",
+SUBQLMWHINTRDOS,2,during_subq_lmwh_intermediate,0,"Binary", "Original level 3 represents 'NC'; not used here"
+SUBQLMWHTHRPDOS,1,during_subq_lmwh_full,1,"Binary",
+SUBQLMWHTHRPDOS,2,during_subq_lmwh_full,0,"Binary", "Original level 3 represents 'NC'; not used here"
+SUBQUFH,1,during_subq_uh,1,"Binary",
+SUBQUFH,2,during_subq_uh,0,"Binary", "Original level 3 represents 'NC'; not used here"
+PARNTLUFH,1,during_subq_paruh,1,"Binary",
+PARNTLUFH,2,during_subq_paruh,0,"Binary", "Original level 3 represents 'NC'; not used here"
 SUBQLMW,,,,,
 DOAC,,,,,
 WARFARIN,,,,,
