@@ -6,7 +6,7 @@ AHA_ID,NA,aha_id,NA,"ID",
 ADMDT,NA,admission_date,NA,"Date",
 AGEi,NA,age_years,NA,Integer,
 SEX,1,sex_male,1,Binary,
-SEX,2,sex_male,0,Binary,"Original 'SEX==3' represents 'Unknown'; not used here"
+SEX,2,sex_male,0,Binary,"Original level 3 represents 'Unknown'; not used here"
 RACEi,1,race,"Hispanic",Categorical,
 RACEi,2,race,"Non-Hispanic Black",Categorical,
 RACEi,3,race,"Native American",Categorical,
@@ -17,16 +17,18 @@ RACEi,7,race,"Unable to be Determined",Categorical,
 BMIadmit,NA,bmi,NA,Continuous,
 MEDHISTO_01,NA,medhist_afib,NA,"Binary","Already in '1=yes;0=no' format"
 MEDHISTO_02,NA,medhist_flutter,NA,"Binary","Already in '1=yes;0=no' format"
-AFIBPRES,1,during_afib,1,"Categorical",
-AFIBPRES,2,during_afib,0,"Categorical","Original 'AFIBPRES==2' represents 'No/ND'"
+AFIBPRES,1,during_afib,1,"Binary",
+AFIBPRES,2,during_afib,0,"Binary","Original level 2 represents 'No/ND'"
 AFIBPRESDT,NA,during_afib_date,NA,"Date",
 MEDHISTO_19,NA,medhist_dvt,NA,"Binary","Already in '1=yes;0=no' format"
 MEDHISTO_27,NA,medhist_pe,NA,"Binary","Already in '1=yes;0=no' format"
 DVT,1,during_dvt,1,"Binary",
-DVT,2,during_dvt,0,"Binary","Original 'DVT==2' represents 'No/ND'"
+DVT,2,during_dvt,0,"Binary","Original level 2 represents 'No/ND'"
 DVTDT,NA,during_dvt_date,NA,"Date",
-ANTICOAG,,,,,
-ANTCOGDVTPRO,,,,,
+ANTICOAG,1,prior_anticoag,1,"Binary",
+ANTICOAG,2,prior_anticoag,0,"Binary","Original level 2 represents 'No/ND'"
+ANTCOGDVTPRO,1,during_anticoag_for_dvt,1,"Binary",
+ANTCOGDVTPRO,2,during_anticoag_for_dvt,0,"Binary", "Original level 3 represents 'NC'; not used here"
 SUBQLMWHLWDOS,,,,,
 SUBQLMWHINTRDOS,,,,,
 SUBQLMWHTHRPDOS,,,,,
