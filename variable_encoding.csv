@@ -39,7 +39,7 @@ SUBQUFH,1,during_subq_uh,1,"Binary",
 SUBQUFH,2,during_subq_uh,0,"Binary", "Original level 3 represents 'NC'; not used here"
 PARNTLUFH,1,during_subq_paruh,1,"Binary",
 PARNTLUFH,2,during_subq_paruh,0,"Binary", "Original level 3 represents 'NC'; not used here"
-SUBQLMW,,,,,
+SUBQLMW,,,,,"Not a variable in the dataset"
 DOAC,,,,,
 WARFARIN,,,,,
 ARGTRBAN,,,,,
