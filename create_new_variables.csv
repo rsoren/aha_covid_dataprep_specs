@@ -1,2 +1,2 @@
 new_variable_name,definition,label,notes
-excluded,,,
+excluded,"medhist_afib != 1","Vector of true/false to identify excluded subjects",
