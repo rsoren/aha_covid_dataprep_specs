@@ -40,18 +40,36 @@ SUBQUFH,2,during_subq_uh,0,"Binary", "Original level 3 represents 'NC'; not used
 PARNTLUFH,1,during_subq_paruh,1,"Binary",
 PARNTLUFH,2,during_subq_paruh,0,"Binary", "Original level 3 represents 'NC'; not used here"
 SUBQLMW,,,,"Skip","Not a variable in the dataset"
-DOAC,,,,,
-WARFARIN,,,,,
-ARGTRBAN,,,,,
-BVALRDIN,,,,,
-DVT,,,,,
-PULEMB,,,,,
-PULEMBDT,,,,,
-INTTHROMB,,,,,
-INTTHROMDT,,,,,
-ACUTLMBISCH,,,,,
-ACUTLMBISCDT,,,,,
-ACTMYOINF,,,,,
+DOAC,1,during_doac,1,"Binary",
+DOAC,2,during_doac,0,"Binary", "Original level 3 represents 'NC'; not used here"
+WARFARIN,1,during_warfarin,1,"Binary",
+WARFARIN,2,during_warfarin,0,"Binary", "Original level 3 represents 'NC'; not used here"
+ARGTRBAN,1,during_argatroban,1,"Binary",
+ARGTRBAN,2,during_argatroban,0,"Binary", "Original level 3 represents 'NC'; not used here"
+BVALRDIN,1,during_bivalirudin,1,"Binary",
+BVALRDIN,2,during_bivalirudin,0,"Binary", "Original level 3 represents 'NC'; not used here"
+DVT,1,during_dvt,1,"Binary",
+DVT,2,during_dvt,0,"Binary",
+DVTDT,NA,during_dvt_date,NA,"Date",
+PULEMB,1,during_pe,1,"Binary",
+PULEMB,2,during_pe,0,"Binary",
+PULEMBDT,NA,during_pe_date,NA,"Date",
+INTTHROM,1,during_intthrom,1,"Binary",
+INTTHROM,2,during_intthrom,0,"Binary",
+INTTHROMDT,NA,during_intthrom_date,NA,"Date",
+ACUTLMBISCH,1,during_acutelimbisch,1,"Binary",
+ACUTLMBISCH,2,during_acutelimbisch,0,"Binary",
+ACUTLMBISCHDT,NA,during_acutelimbisch_date,NA,"Date",
+ACTMYOINF,1,during_ami_any,1,"Binary","1 is 'STEMI'"
+ACTMYOINF,2,during_ami_any,1,"Binary","2 is 'NSTEMI'"
+ACTMYOINF,3,during_ami_any,0,"Binary","3 is 'No/ND'"
+ACTMYOINF,1,during_ami_stemi,1,"Binary",
+ACTMYOINF,2,during_ami_nstemi,0,"Binary",
+
+
+ACTMYOINF,2,during_acutelimbisch,0,"Binary",
+AMIDT,NA,during_ami_date,NA,"Date",
+
 PATMANICU,,,,,
 DDMER,,,,,
 DDMERU,,,,,
