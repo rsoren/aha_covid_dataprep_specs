@@ -5,16 +5,16 @@ CASE_ID,NA,case_id,NA,"ID",
 AHA_ID,NA,aha_id,NA,"ID",
 ADMDT,NA,admission_date,NA,"Date",
 AGEi,NA,age_years,NA,Integer,
-SEX,1,sex_male,1,Binary,
-SEX,2,sex_male,0,Binary,"Original level 3 represents 'Unknown'; not used here"
-RACEi,1,race,"Hispanic",Categorical,
-RACEi,2,race,"Non-Hispanic Black",Categorical,
-RACEi,3,race,"Native American",Categorical,
-RACEi,4,race,"Asian",Categorical,
-RACEi,5,race,"Pacific Islander",Categorical,
-RACEi,6,race,"Non-Hispanic White",Categorical,
-RACEi,7,race,"Unable to be Determined",Categorical,
-BMIadmit,NA,bmi,NA,Continuous,
+SEX,1,sex_male,1,"Binary",
+SEX,2,sex_male,0,"Binary","Original level 3 represents 'Unknown'; not used here"
+RACEi,1,race,"Hispanic","Categorical",
+RACEi,2,race,"Non-Hispanic Black","Categorical",
+RACEi,3,race,"Native American","Categorical",
+RACEi,4,race,"Asian","Categorical",
+RACEi,5,race,"Pacific Islander","Categorical",
+RACEi,6,race,"Non-Hispanic White","Categorical",
+RACEi,7,race,"Unable to be Determined","Categorical",
+BMIadmit,NA,admission_bmi,NA,"Continuous",
 MEDHISTO_01,NA,medhist_afib,NA,"Binary","Already in '1=yes;0=no' format"
 MEDHISTO_02,NA,medhist_flutter,NA,"Binary","Already in '1=yes;0=no' format"
 AFIBPRES,1,during_afib,1,"Binary",
@@ -60,21 +60,20 @@ INTTHROMDT,NA,during_intthrom_date,NA,"Date",
 ACUTLMBISCH,1,during_acutelimbisch,1,"Binary",
 ACUTLMBISCH,2,during_acutelimbisch,0,"Binary",
 ACUTLMBISCHDT,NA,during_acutelimbisch_date,NA,"Date",
-ACTMYOINF,1,during_ami_any,1,"Binary","1 is 'STEMI'"
-ACTMYOINF,2,during_ami_any,1,"Binary","2 is 'NSTEMI'"
-ACTMYOINF,3,during_ami_any,0,"Binary","3 is 'No/ND'"
-ACTMYOINF,1,during_ami_stemi,1,"Binary",
-ACTMYOINF,2,during_ami_nstemi,0,"Binary",
-
-
-ACTMYOINF,2,during_acutelimbisch,0,"Binary",
+ACTMYOINF,1,during_ami_any,1,"Binary","Original level 1 is 'STEMI'"
+ACTMYOINF,2,during_ami_any,1,"Binary","Original level 2 is 'NSTEMI'"
+ACTMYOINF,3,during_ami_any,0,"Binary","Original level 3 is 'No/ND'"
+ACTMYOINF,1,during_ami_is_stemi,1,"Binary",
+ACTMYOINF,2,during_ami_is_stemi,0,"Binary","New level 0 indicates AMI but not STEMI"
 AMIDT,NA,during_ami_date,NA,"Date",
-
-PATMANICU,,,,,
-DDMER,,,,,
-DDMERU,,,,,
-PAO2,,,,,
-FIO2,,,,,
+PATMANICU,1,patient_managedin_icu,1,"Binary",
+PATMANICU,2,patient_managedin_icu,0,"Binary",
+PATMANICUDT,NA,patient_entered_icu_date,NA,"Date",
+PATMANICUOUTDT,NA,patient_left_icu_date,NA,"Date",
+DDMER,NA,admission_ddimer,NA,"Continuous",
+DDMERU,NA,admission_ddimer,NA,"Unit label",
+PAO2,NA,critical_pao2,NA,"Continuous",
+FIO2,NA,critical_fio2,NA,"Continuous",
 DSCHSTAT,1,discharge_status,"Home",Categorical,
 DSCHSTAT,2,discharge_status,"Hospice - Home",Categorical,
 DSCHSTAT,3,discharge_status,"Hospice - Health Care Facility",Categorical,
