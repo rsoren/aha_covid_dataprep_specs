@@ -20,6 +20,8 @@ MEDHISTO_02,NA,medhist_flutter,NA,"Binary","Already in '1=yes;0=no' format"
 AFIBPRES,1,during_afib,1,"Binary",
 AFIBPRES,2,during_afib,0,"Binary","Original level 2 represents 'No/ND'"
 AFIBPRESDT,NA,during_afib_date,NA,"Date",
+PRSNTEKGDOC,1,presenting_ekg_is_documented,1,"Binary",
+PRSNTEKGDOC,2,presenting_ekg_is_documented,0,"Binary","Original level 2 represents 'No/ND'"
 MEDHISTO_19,NA,medhist_dvt,NA,"Binary","Already in '1=yes;0=no' format"
 MEDHISTO_27,NA,medhist_pe,NA,"Binary","Already in '1=yes;0=no' format"
 DVT,1,during_dvt,1,"Binary",
