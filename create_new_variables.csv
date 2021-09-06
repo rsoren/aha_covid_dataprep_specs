@@ -1,5 +1,5 @@
 new_variable_name,definition,label,notes
-has_afib_at_admission,"during_afib %in% 1 & during_afib_date==admission_date",
+has_afib_at_admission,"during_afib %in% 1 & during_afib_date==admission_date",,
 existing_afib,"medhist_afib %in% 1 | has_afib_at_admission %in% 1",,
 existing_flutter,"medhist_flutter %in% 1",,
 existing_dvt,,,
