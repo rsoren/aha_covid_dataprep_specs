@@ -1,3 +1,7 @@
 new_variable_name,definition,label,notes
-excluded,"medhist_afib != 1","Vector of true/false to identify excluded subjects",
+has_afib_at_admission,"during_afib %in% 1 & during_afib_date==admission_date",
+existing_afib,"medhist_afib %in% 1 | has_afib_at_admission %in% 1",,
+existing_flutter,"medhist_flutter %in% 1",,
+existing_dvt,,,
+meets_exclusion_criteria,"existing_afib|existing_flutter","Vector of true/false to identify excluded subjects",
 testing,,,
