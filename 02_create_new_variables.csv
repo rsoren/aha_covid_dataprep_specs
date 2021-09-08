@@ -1,7 +1,7 @@
 new_variable_name,definition,label,notes
 ,,,
 has_afib_at_admission,"during_afib %in% 1 & during_afib_date==admission_date",,
-existing_afib,"medhist_afib %in% 1 | has_afib_at_admission %in% 1" | presenting_ekg_rhythm %in% 'Atrial fibrillation'",,
+existing_afib,"medhist_afib %in% 1 | has_afib_at_admission %in% 1 | presenting_ekg_rhythm %in% 'Atrial fibrillation'",,
 existing_flutter,"medhist_flutter %in% 1 | presenting_ekg_rhythm %in% 'Atrial flutter'",,
 ,,,
 has_dvt_at_admission,"during_dvt %in% 1 & during_dvt_date==admission_date",,
