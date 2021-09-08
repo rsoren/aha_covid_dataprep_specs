@@ -70,10 +70,10 @@ ACTMYOINF,1,during_ami_any,1,"Binary","Original level 1 is 'STEMI'"
 ACTMYOINF,2,during_ami_any,1,"Binary","Original level 2 is 'NSTEMI'"
 ACTMYOINF,3,during_ami_any,0,"Binary","Original level 3 is 'No/ND'"
 ACTMYOINF,1,during_ami_is_stemi,1,"Binary",
-ACTMYOINF,2,during_ami_is_stemi,0,"Binary",
-NSTEMITYP,1,during_ami_nstemi_type,"Type 1 MI",
-NSTEMITYP,2,during_ami_nstemi_type,"Type 2 (Demand-Related) MI",
-NSTEMITYP,3,during_ami_nstemi_type,"ND",
+ACTMYOINF,2,during_ami_is_stemi,0,"Binary","New level 0 indicates AMI but not STEMI (i.e. NSTEMI)"
+NSTEMITYP,1,during_ami_nstemi_type,"Type 1 MI","Categorical",
+NSTEMITYP,2,during_ami_nstemi_type,"Type 2 (Demand-Related) MI","Categorical",
+NSTEMITYP,3,during_ami_nstemi_type,"ND","Categorical",
 AMIDT,NA,during_ami_date,NA,"Date",
 PATMANICU,1,patient_managedin_icu,1,"Binary",
 PATMANICU,2,patient_managedin_icu,0,"Binary",
