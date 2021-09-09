@@ -37,19 +37,26 @@ ANTCOGDVTPRO,1,during_anticoag_for_dvt,1,"Binary",
 ANTCOGDVTPRO,2,during_anticoag_for_dvt,0,"Binary", "Original level 3 represents 'NC'; not used here"
 SUBQLMWHLWDOS,1,during_subq_lmwh_low,1,"Binary",
 SUBQLMWHLWDOS,2,during_subq_lmwh_low,0,"Binary", "Original level 3 represents 'NC'; not used here"
+SUBQLMWHLWDOSDT,NA,during_subq_lmwh_low_date,NA,"Date",
 SUBQLMWHINTRDOS,1,during_subq_lmwh_intermediate,1,"Binary",
 SUBQLMWHINTRDOS,2,during_subq_lmwh_intermediate,0,"Binary", "Original level 3 represents 'NC'; not used here"
+SUBQLMWHINTRDOSDT,NA,during_subq_lmwh_intermediate_date,NA,"Date",
 SUBQLMWHTHRPDOS,1,during_subq_lmwh_full,1,"Binary",
 SUBQLMWHTHRPDOS,2,during_subq_lmwh_full,0,"Binary", "Original level 3 represents 'NC'; not used here"
+SUBQLMWHTHRPDOSDT,NA,during_subq_lmwh_full_date,NA,"Date",
 SUBQUFH,1,during_subq_uh,1,"Binary",
 SUBQUFH,2,during_subq_uh,0,"Binary", "Original level 3 represents 'NC'; not used here"
+SUBQUFHDT,NA,during_subq_uh_date,NA,"Date",
 PARNTLUFH,1,during_subq_paruh,1,"Binary",
 PARNTLUFH,2,during_subq_paruh,0,"Binary", "Original level 3 represents 'NC'; not used here"
+PARNTLUFHDT,NA,during_subq_paruh_date,NA,"Date",
 SUBQLMW,,,,"Skip","Not a variable in the dataset"
 DOAC,1,during_doac,1,"Binary",
 DOAC,2,during_doac,0,"Binary", "Original level 3 represents 'NC'; not used here"
+DOACDT,NA,during_doac_date,NA,"Date",
 WARFARIN,1,during_warfarin,1,"Binary",
 WARFARIN,2,during_warfarin,0,"Binary", "Original level 3 represents 'NC'; not used here"
+WARFARINDT,NA,during_warfarin_date,NA,"Date",
 ARGTRBAN,1,during_argatroban,1,"Binary",
 ARGTRBAN,2,during_argatroban,0,"Binary", "Original level 3 represents 'NC'; not used here"
 BVALRDIN,1,during_bivalirudin,1,"Binary",
