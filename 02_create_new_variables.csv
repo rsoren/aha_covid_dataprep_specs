@@ -33,7 +33,7 @@ fulldose_date4_beforeicu,"ifelse(fulldose_anticoag_dvt %in% 1 & during_anticoag_
 latest_fulldose_date_beforeicu,"max(fulldose_date1_beforeicu, fulldose_date2_beforeicu, fulldose_date3_beforeicu, fulldose_date4_beforeicu, na.rm = TRUE)","Date",
 ,,,
 highest_dose_beforeicu,"None","Categorical",
-highest_dose_beforeicu,"ifelse(!is.na(latest_lowdose_date_before_icu), "Low", highest_dose_beforeicu)","Categorical",
-highest_dose_beforeicu,"ifelse(!is.na(latest_intdose_date_before_icu), "Intermediate", highest_dose_beforeicu)","Categorical",
-highest_dose_beforeicu,"ifelse(!is.na(latest_fulldose_date_before_icu), "Full", highest_dose_beforeicu)","Categorical",
+highest_dose_beforeicu,"ifelse(!is.na(latest_lowdose_date_before_icu), 'Low', highest_dose_beforeicu)","Categorical",
+highest_dose_beforeicu,"ifelse(!is.na(latest_intdose_date_before_icu), 'Intermediate', highest_dose_beforeicu)","Categorical",
+highest_dose_beforeicu,"ifelse(!is.na(latest_fulldose_date_before_icu), 'Full', highest_dose_beforeicu)","Categorical",
 
