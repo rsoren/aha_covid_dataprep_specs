@@ -18,7 +18,7 @@ any_lowdose_anticoag,"during_subq_lmwh_low %in% 1 | lowdose_anticoag_dvt %in% 1"
 any_intdose_anticoag,"during_subq_lmwh_intermediate %in% 1","Binary",
 any_fulldose_anticoag,"during_subq_lmwh_full %in% 1 | during_subq_uh %in% 1 | during_subq_paruh %in% 1 | fulldose_anticoag_dvt %in% 1","Binary",
 ,,,
-lowdose_date1,"ifelse(lowdose_anticoag_dvt %in% 1, during_anticoag_dvt_date, NA)"
+lowdose_date1,"ifelse(lowdose_anticoag_dvt %in% 1, during_anticoag_dvt_date, NA)",,
 lowdose_date2,"during_subqlmwh_low_date",,
 latest_lowdose_date,"max(lowdose_date1, lowdose_date2, na.rm = TRUE)",,
 ,,,
