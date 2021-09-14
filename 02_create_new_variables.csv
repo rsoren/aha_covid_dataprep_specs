@@ -17,8 +17,8 @@ nonhispanic_white_race,"race == 'Non-Hispanic White'","Binary",0,
 nonhispanic_black_race,"race == 'Non-Hispanic Black'","Binary",0,
 ,,,,
 on_aspirin_p2y12_before_adm,"on_aspirin_before_adm==1 | on_p2y12_before_adm==1","Binary",0,
-days_symptoms_to_admission,"as.numeric(as_date(admission_date) - as_date(symptom_start_date))","Continuous",0
-days_diagnosis_to_admission,"as.numeric(as_date(admission_date) - as_date(diagnosis_date))","Continuous",0
+days_symptoms_to_admission,"as.numeric(as_date(admission_date) - as_date(symptom_start_date))","Continuous",0,
+days_diagnosis_to_admission,"as.numeric(as_date(admission_date) - as_date(diagnosis_date))","Continuous",0,
 ,,,,
 wbc_mcl,"ifelse(admission_wbc_units == 'mcL', admission_wbc, NA)","Continuous",0,
 wbc_mcl,"ifelse(admission_wbc_units == 'K/uL', admission_wbc * 1000, wbc_mcl)","Continuous",0,"One K/uL is one-thousand mcL"
@@ -32,6 +32,12 @@ ntprobnp_pgml,"ifelse(admission_ntprobnp_units == 'ng/L', admission_ntprobnp, ad
 bnp_pgml,"ifelse(admission_troponin_units == 'ng/mL', admission_bnp, NA)","Continuous",0,
 bnp_pgml,"ifelse(admission_troponin_units == 'pmol/L', admission_bnp / 0.289, admission_bnp)","Continuous",0,"'The conversion factor for BNP is 1 pg/mL = 0.289 pmol/L'"
 bnp_pgml,"ifelse(admission_troponin_units == 'ng/L', admission_bnp, admission_bnp)","Continuous",0,"No conversion needed; they are equivalent"
+
+ddimer_ngml,"ifelse(admission_ddimer_units == 'ng/mL', admission_ddimer, NA)","Continuous",0,
+ddimer_ngml,"ifelse(admission_ddimer_units == 'micrograms/mL', admission_ddimer, admission_ddimer * 0.001)","Continuous",0,"One microgram/mL is 0.001 ng/mL"
+ddimer_ngml,"ifelse(admission_ddimer_units == 'ug/mL', admission_ddimer, admission_ddimer * 0.001)","Continuous",0,"One ug/mL is 0.001 ng/mL"
+
+admission_ddimer
 ,,,,
 lowdose_anticoag_dvt,"during_anticoag_dvt_type %in% c('Low Dose DOAC', 'Low Dose Enoxaperin')", "Binary",0,
 fulldose_anticoag_dvt,"during_anticoag_dvt_type %in% c('Full Dose DOAC', 'Full Dose Enoxaperin')", "Binary",0,
