@@ -21,7 +21,7 @@ any_fulldose_anticoag,"during_subq_lmwh_full %in% 1 | during_subq_uh %in% 1 | du
 patient_entered_icu_date2,"ifelse(is.na(patient_entered_icu_date), as_date('9999-12-31'), patient_entered_icu_date)","Date",
 ,,,
 lowdose_date1_beforeicu,"ifelse(lowdose_anticoag_dvt %in% 1 & during_anticoag_dvt_date<patient_entered_icu_date2, during_anticoag_dvt_date, NA)","Binary",
-lowdose_date2_beforeicu,"ifelse(during_subqlmwh_low_date < patient_entered_icu_date2, during_subqlmwh_low_date, NA)","Binary",
+lowdose_date2_beforeicu,"ifelse(during_subq_lmwh_low_date < patient_entered_icu_date2, during_subq_lmwh_low_date, NA)","Binary",
 latest_lowdose_date_beforeicu,"max(lowdose_date1_beforeicu, lowdose_date2_beforeicu, na.rm = TRUE)","Date",
 ,,,
 latest_intdose_date_beforeicu,"ifelse(during_subq_lmwh_intermediate_date < patient_entered_icu_date2, during_subq_lmwh_intermediate_date, NA)","Date",
