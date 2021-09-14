@@ -40,4 +40,5 @@ serum_creatinine_mgdl,"Serum creatinine (mg/dL)",
 troponin_ngml,"Troponin (ng/mL)",
 ntprobnp_pgml,"NT-proBNP (pg/mL)",
 bnp_pgml,"BNP (pg/mL)",
+ddimer_ngml,"D-dimer (ng/mL)",
 
