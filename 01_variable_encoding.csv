@@ -17,6 +17,24 @@ RACEi,7,race,"Unable to be Determined","Categorical",
 BMIadmit,NA,admission_bmi,NA,"Continuous",
 MEDHISTO_01,NA,medhist_afib,NA,"Binary","Already in '1=yes;0=no' format"
 MEDHISTO_02,NA,medhist_flutter,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_03,NA,medhist_cancer,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_05,NA,medhist_stroke,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_18,NA,medhist_ckd,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_07,NA,medhist_on_dialysis,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_08,NA,medhist_diabetes,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_09,NA,medhist_dyslipidemia,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_11,NA,medhist_heart_failure,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_12,NA,medhist_hypertension,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_13,NA,medhist_pad,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_15,NA,medhist_mi,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_14,NA,medhist_cabg,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_16,NA,medhist_pci,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_24,NA,medhist_immune_disorder,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_33,NA,medhist_organ_transplant,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_28,NA,medhist_pulmonary_disease,NA,"Binary","Already in '1=yes;0=no' format"
+MEDHISTO_21,NA,medhist_smoking,NA,"Binary","Already in '1=yes;0=no' format"
+ANTIHYPRTNSV,1,on_hypertensive_before_adm,1,"Binary",
+ANTIHYPRTNSV,2,on_hypertensive_before_adm,0,"Binary","Original level 2 represents 'No/ND'"
 AFIBPRES,1,during_afib,1,"Binary",
 AFIBPRES,2,during_afib,0,"Binary","Original level 2 represents 'No/ND'"
 AFIBPRESDT,NA,during_afib_date,NA,"Date",
