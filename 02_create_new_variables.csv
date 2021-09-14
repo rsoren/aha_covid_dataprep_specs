@@ -9,7 +9,7 @@ existing_dvt,"medhist_dvt %in% 1 | has_dvt_at_admission %in% 1","Binary",
 has_pe_at_admission,"during_pe %in% 1 & during_pe_date==admission_date","Binary",
 existing_pe,"medhist_pe %in% 1 | has_pe_at_admission","Binary",
 ,,,
-existing_anticoag,"anticoag_prior %in% 1","Binary",
+existing_anticoag,"prior_anticoag %in% 1","Binary",
 meets_exclusion_criteria,"existing_afib|existing_flutter|existing_dvt|existing_pe|existing_anticoag","Binary","Vector of true/false to identify excluded subjects"
 ,,,
 lowdose_anticoag_dvt,"during_anticoag_dvt_type %in% c('Low Dose DOAC', 'Low Dose Enoxaperin')", "Binary",
