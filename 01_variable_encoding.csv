@@ -56,6 +56,26 @@ SYMONSTDT,NA,symptom_start_date,NA,"Date",
 DIAGDT,NA,diagnosis_date,NA,"Date",
 COVCLINTRIAL,1,in_covid_trial,1,"Binary",
 COVCLINTRIAL,2,in_covid_trial,0,"Binary","Original level 2 represents 'No/ND'"
+WBCADM,NA,admission_wbc,NA,"Continuous",
+WBCUADM,1,admission_wbc_units,"K/uL","Unit label",
+WBCUADM,2,admission_wbc_units,"mcL","Unit label",
+HBA1CADM,NA,admission_hba1c,NA,"Continuous","Unit is %"
+PLATELET,NA,admission_platelet,NA,"Continuous","Unit is K/uL"
+TOTBILRBN,NA,admission_total_bili,NA,"Continuous","Unit is mg/dL"
+INITSCR,NA,admission_serum_creatinine,NA,"Continuous","Unit is mg/dL"
+SCRUADM,1,admission_serum_creatinine_units,"mg/dL","Unit label",
+SCRUADM,2,admission_serum_creatinine_units,"micromole/L","Unit label",
+TROPADM,NA,admission_troponin,NA,"Continuous",
+TROPUADM,1,admission_troponin_units,"ng/mL","Unit label",
+TROPUADM,2,admission_troponin_units,"ug/L","Unit label",
+TROPUADM,3,admission_troponin_units,"ng/L","Unit label",
+NTPROBNPADM,NA,admission_ntprobnp,NA,"Continuous",
+NTPROBNPUADM,1,admission_ntprobnp_units,"pg/mL","Unit label",
+NTPROBNPUADM,2,admission_ntprobnp_units,"ng/L","Unit label",
+BNPADM,NA,admission_bnp,NA,"Continuous",
+BNPUADM,1,admission_bnp_units,"pg/mL","Unit label",
+BNPUADM,2,admission_bnp_units,"pmol/L","Unit label",
+BNPUADM,3,admission_bnp_units,"ng/L","Unit label",
 AFIBPRES,1,during_afib,1,"Binary",
 AFIBPRES,2,during_afib,0,"Binary","Original level 2 represents 'No/ND'"
 AFIBPRESDT,NA,during_afib_date,NA,"Date",
