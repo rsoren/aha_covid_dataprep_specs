@@ -35,6 +35,27 @@ MEDHISTO_28,NA,medhist_pulmonary_disease,NA,"Binary","Already in '1=yes;0=no' fo
 MEDHISTO_21,NA,medhist_smoking,NA,"Binary","Already in '1=yes;0=no' format"
 ANTIHYPRTNSV,1,on_hypertensive_before_adm,1,"Binary",
 ANTIHYPRTNSV,2,on_hypertensive_before_adm,0,"Binary","Original level 2 represents 'No/ND'"
+LIPLOWTHRP,1,on_lipidtherapy_before_adm,1,"Binary",
+LIPLOWTHRP,2,on_lipidtherapy_before_adm,0,"Binary","Original level 2 represents 'No/ND'"
+ANTIPLT,1,on_antiplatelet_before_adm,1,"Binary",
+ANTIPLT,2,on_antiplatelet_before_adm,0,"Binary","Original level 2 represents 'No/ND'"
+ANTIHYPRGLYM,1,on_antihyperglycemic_before_adm,1,"Binary",
+ANTIHYPRGLYM,2,on_antihyperglycemic_before_adm,0,"Binary","Original level 2 represents 'No/ND'"
+ANTIPLTTX_01,NA,on_aspirin_before_adm,NA,"Binary","Already in '1=yes;0=no' format"
+ANTIPLTTX_02,NA,on_p2y12_before_adm,NA,"Binary","Already in '1=yes;0=no' format"
+CORTICOSTERD,1,on_corticosteroid_before_adm,1,"Binary","Original level is 'Inhaled'"
+CORTICOSTERD,2,on_corticosteroid_before_adm,1,"Binary","Original level is 'Oral'"
+CORTICOSTERD,3,on_corticosteroid_before_adm,0,"Binary",
+IMMUSUPPMED,1,on_immunesuppressmed_before_adm,1,"Binary",
+IMMUSUPPMED,2,on_immunesuppressmed_before_adm,0,"Binary","Original level 2 represents 'No/ND'"
+CHEMBIOCNCR,1,on_chemo_or_biologic_before_adm,1,"Binary",
+CHEMBIOCNCR,2,on_chemo_or_biologic_before_adm,0,"Binary","Original level 2 represents 'No/ND'"
+HYDCHLQUN,1,on_hydroxychloroquin_before_adm,1,"Binary",
+HYDCHLQUN,2,on_hydroxychloroquin_before_adm,0,"Binary","Original level 2 represents 'No/ND'"
+SYMONSTDT,NA,symptom_start_date,NA,"Date",
+DIAGDT,NA,diagnosis_date,NA,"Date",
+COVCLINTRIAL,1,in_covid_trial,1,"Binary",
+COVCLINTRIAL,2,in_covid_trial,0,"Binary","Original level 2 represents 'No/ND'"
 AFIBPRES,1,during_afib,1,"Binary",
 AFIBPRES,2,during_afib,0,"Binary","Original level 2 represents 'No/ND'"
 AFIBPRESDT,NA,during_afib_date,NA,"Date",
