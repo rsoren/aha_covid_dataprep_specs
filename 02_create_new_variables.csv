@@ -16,6 +16,23 @@ hispanic_race,"race == 'Hispanic'","Binary",0,
 nonhispanic_white_race,"race == 'Non-Hispanic White'","Binary",0,
 nonhispanic_black_race,"race == 'Non-Hispanic Black'","Binary",0,
 ,,,,
+on_aspirin_p2y12_before_adm,"on_aspirin_before_adm==1 | on_p2y12_before_adm==1","Binary",0,
+days_symptoms_to_admission,"as.numeric(as_date(admission_date) - as_date(symptom_start_date))","Continuous",0
+days_diagnosis_to_admission,"as.numeric(as_date(admission_date) - as_date(diagnosis_date))","Continuous",0
+,,,,
+wbc_mcl,"ifelse(admission_wbc_units == 'mcL', admission_wbc, NA)","Continuous",0,
+wbc_mcl,"ifelse(admission_wbc_units == 'K/uL', admission_wbc * 1000, wbc_mcl)","Continuous",0,"One K/uL is one-thousand mcL"
+serum_creatinine_mgdl,"ifelse(admission_serum_creatinine_units == 'mg/dL', admission_serum_creatinine, NA)","Continuous",0,
+serum_creatinine_mgdl,"ifelse(admission_serum_creatinine_units == 'micromole/L', admission_serum_creatinine * 0.0113, admission_serum_creatinine)","Continuous",0,"Regarding SCr: To convert μmol/l to mg/dl multiply by 0.0113"
+troponin_ngml,"ifelse(admission_troponin_units == 'ng/mL', admission_troponin, NA)","Continuous",0,
+troponin_ngml,"ifelse(admission_troponin_units == 'ug/L', admission_troponin, admission_troponin)","Continuous",0,"No conversion needed; they are equivalent"
+troponin_ngml,"ifelse(admission_troponin_units == 'ng/L', admission_troponin * 0.001, admission_troponin)","Continuous",0,"One ng/L is 0.001 ng/mL"
+ntprobnp_pgml,"ifelse(admission_ntprobnp_units == 'pg/mL', admission_ntprobnp, NA)","Continuous",0,
+ntprobnp_pgml,"ifelse(admission_ntprobnp_units == 'ng/L', admission_ntprobnp, admission_ntprobnp)","Continuous",0,"No conversion needed; they are equivalent"
+bnp_pgml,"ifelse(admission_troponin_units == 'ng/mL', admission_bnp, NA)","Continuous",0,
+bnp_pgml,"ifelse(admission_troponin_units == 'pmol/L', admission_bnp / 0.289, admission_bnp)","Continuous",0,"'The conversion factor for BNP is 1 pg/mL = 0.289 pmol/L'"
+bnp_pgml,"ifelse(admission_troponin_units == 'ng/L', admission_bnp, admission_bnp)","Continuous",0,"No conversion needed; they are equivalent"
+,,,,
 lowdose_anticoag_dvt,"during_anticoag_dvt_type %in% c('Low Dose DOAC', 'Low Dose Enoxaperin')", "Binary",0,
 fulldose_anticoag_dvt,"during_anticoag_dvt_type %in% c('Full Dose DOAC', 'Full Dose Enoxaperin')", "Binary",0,
 any_lowdose_anticoag,"during_subq_lmwh_low %in% 1 | lowdose_anticoag_dvt %in% 1","Binary",0,
