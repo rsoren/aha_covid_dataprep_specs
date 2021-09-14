@@ -32,12 +32,14 @@ ntprobnp_pgml,"ifelse(admission_ntprobnp_units == 'ng/L', admission_ntprobnp, ad
 bnp_pgml,"ifelse(admission_troponin_units == 'ng/mL', admission_bnp, NA)","Continuous",0,
 bnp_pgml,"ifelse(admission_troponin_units == 'pmol/L', admission_bnp / 0.289, admission_bnp)","Continuous",0,"'The conversion factor for BNP is 1 pg/mL = 0.289 pmol/L'"
 bnp_pgml,"ifelse(admission_troponin_units == 'ng/L', admission_bnp, admission_bnp)","Continuous",0,"No conversion needed; they are equivalent"
-
 ddimer_ngml,"ifelse(admission_ddimer_units == 'ng/mL', admission_ddimer, NA)","Continuous",0,
 ddimer_ngml,"ifelse(admission_ddimer_units == 'micrograms/mL', admission_ddimer, admission_ddimer * 0.001)","Continuous",0,"One microgram/mL is 0.001 ng/mL"
 ddimer_ngml,"ifelse(admission_ddimer_units == 'ug/mL', admission_ddimer, admission_ddimer * 0.001)","Continuous",0,"One ug/mL is 0.001 ng/mL"
-
-admission_ddimer
+crp_mgl,"ifelse(admission_crp_units == 'mg/L', admission_crp, NA)","Continuous",0,
+crp_mgl,"ifelse(admission_crp_units == 'ng/L', admission_crp * 0.000001, admission_crp)","Continuous",0,"One ng/L is 0.000001 mg/L"
+crp_mgl,"ifelse(admission_crp_units == 'mg/dL', admission_crp * 10, admission_crp)","Continuous",0,"One mg/dL is 10 mg/L"
+procalcitonin_ngml,"ifelse(admission_procalcitonin_units == 'ng/mL', admission_procalcitonin, NA)","Continuous",0,
+procalcitonin_ngml,"ifelse(admission_procalcitonin_units == 'micrograms/L', admission_procalcitonin, admission_procalcitonin)","Continuous",0,"No conversion needed; they are equivalent"
 ,,,,
 lowdose_anticoag_dvt,"during_anticoag_dvt_type %in% c('Low Dose DOAC', 'Low Dose Enoxaperin')", "Binary",0,
 fulldose_anticoag_dvt,"during_anticoag_dvt_type %in% c('Full Dose DOAC', 'Full Dose Enoxaperin')", "Binary",0,
