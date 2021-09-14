@@ -31,4 +31,4 @@ on_immunesuppressmed_before_adm,'Taking immunosuppressive medication',
 on_hydroxychloroquin_before_adm,'Taking hydroxychloroquinn',
 days_symptoms_to_admission,'Days from symptoms to admission',
 days_diagnosis_to_admission,'Days from diagnosis to admission',
-in_covid_trial,'In a COVID-19 clinical trial'
+in_covid_trial,'In a COVID-19 clinical trial',
