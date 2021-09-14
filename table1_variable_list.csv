@@ -41,4 +41,5 @@ troponin_ngml,"Troponin (ng/mL)",
 ntprobnp_pgml,"NT-proBNP (pg/mL)",
 bnp_pgml,"BNP (pg/mL)",
 ddimer_ngml,"D-dimer (ng/mL)",
-
+crp_mgl,"CRP (mg/L)",
+admission_ferritin,"Ferritin (ng/mL)",
