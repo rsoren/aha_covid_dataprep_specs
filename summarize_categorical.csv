@@ -1,4 +1,0 @@
-variable,condition,label,notes
-during_subq_lmwh_low,"!excluded","Sub-Q LMW Heparin Low Dose",
-during_subq_lmwh_intermediate,"!excluded","Sub-Q LMW Heparin Intermediate Dose",
-during_subq_lmwh_full,"!excluded","Sub-Q LMW Heparin Full Dose",
