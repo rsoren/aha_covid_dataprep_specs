@@ -143,8 +143,10 @@ WARFARIN,2,during_warfarin,0,"Binary", "Original level 3 represents 'NC'; not us
 WARFARINDT,NA,during_warfarin_date,NA,"Date",
 ARGTRBAN,1,during_argatroban,1,"Binary",
 ARGTRBAN,2,during_argatroban,0,"Binary", "Original level 3 represents 'NC'; not used here"
+ARGTRBANDT,NA,during_argatroban_date,NA,"Date",
 BVALRDIN,1,during_bivalirudin,1,"Binary",
 BVALRDIN,2,during_bivalirudin,0,"Binary", "Original level 3 represents 'NC'; not used here"
+BVALRDINDT,NA,during_bivalirudin_date,NA,"Date",
 DVT,1,during_dvt,1,"Binary",
 DVT,2,during_dvt,0,"Binary",
 DVTDT,NA,during_dvt_date,NA,"Date",
