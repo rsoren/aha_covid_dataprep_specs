@@ -102,6 +102,9 @@ MEDHISTO_27,NA,medhist_pe,NA,"Binary","Already in '1=yes;0=no' format"
 DVT,1,during_dvt,1,"Binary",
 DVT,2,during_dvt,0,"Binary","Original level 2 represents 'No/ND'"
 DVTDT,NA,during_dvt_date,NA,"Date",
+CLNBLDTRANS,1,clinical_bleeding_transfusion,1,"Binary",
+CLNBLDTRANS,2,clinical_bleeding_transfusion,0,"Binary","Original level 2 represents 'No/ND'"
+PULHMRRDIAGDT,NA,clinical_bleeding_transfusion_date,NA,"Date",
 ANTICOAG,1,prior_anticoag,1,"Binary",
 ANTICOAG,2,prior_anticoag,0,"Binary","Original level 2 represents 'No/ND'"
 ANTICOAGTX,1,prior_anticoag_type,"Direct Thrombin Inhibitor",Categorical,
