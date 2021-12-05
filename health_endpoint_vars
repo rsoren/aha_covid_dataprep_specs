@@ -1,0 +1,7 @@
+variable,variable_date,notes
+during_afib,,
+during_ami_any,during_ami_date,
+during_dvt,,
+during_pe,,
+clinical_bleeding_transfusion,,
+ischemic_stroke_ichemorrhage,,
