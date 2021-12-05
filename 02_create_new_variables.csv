@@ -85,4 +85,3 @@ earliest_healthevent_date2,"ifelse(is.na(earliest_healthevent_date), as_date('99
 ,,,,
 lowdose_date1_beforehe,"ifelse(lowdose_anticoag_dvt %in% 1 & during_anticoag_dvt_date<earliest_healthevent_date2, during_anticoag_dvt_date, NA)","Binary",0,
 lowdose_date2_beforehe,"ifelse(during_subq_lmwh_low_date < earliest_healthevent_date2, during_subq_lmwh_low_date, NA)","Binary",0,
-earliest_lowdose_date_beforehe,”min(lowdose_date1_beforehe, lowdose_date2_beforehe, na.rm = TRUE)","Date",1,
