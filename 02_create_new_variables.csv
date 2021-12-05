@@ -11,9 +11,12 @@ existing_pe,"medhist_pe %in% 1 | has_pe_at_admission","Binary",0,
 ,,,,
 existing_anticoag,"prior_anticoag %in% 1","Binary",0,
 ,,,,
+ami_at_adm,"during_ami_any %in% 1 & during_ami_date==admission_date","Binary",0,
+bleeding_at_adm,"clinical_bleeding_transfusion %in% 1 & clinical_bleeding_transfusion_date==admission_date","Binary",0,
 ischemic_stroke_at_adm,"ischemic_stroke_ichemorrhage %in% 1 & ischemic_stroke_ichemorrhage_date==admission_date","Binary",0,
 
-meets_exclusion_criteria,"ischemic_stroke_at_adm|existing_afib|existing_flutter|existing_dvt|existing_pe|existing_anticoag","Binary",0,"Vector of true/false to identify excluded subjects"
+,,,,
+meets_exclusion_criteria,"ami_at_adm|bleeding_at_adm|ischemic_stroke_at_adm|existing_afib|existing_flutter|existing_dvt|existing_pe|existing_anticoag","Binary",0,"Vector of true/false to identify excluded subjects"
 ,,,,
 hispanic_race,"race == 'Hispanic'","Binary",0,
 nonhispanic_white_race,"race == 'Non-Hispanic White'","Binary",0,
