@@ -14,7 +14,6 @@ existing_anticoag,"prior_anticoag %in% 1","Binary",0,
 ami_at_adm,"during_ami_any %in% 1 & during_ami_date==admission_date","Binary",0,
 bleeding_at_adm,"clinical_bleeding_transfusion %in% 1 & clinical_bleeding_transfusion_date==admission_date","Binary",0,
 ischemic_stroke_at_adm,"ischemic_stroke_ichemorrhage %in% 1 & ischemic_stroke_ichemorrhage_date==admission_date","Binary",0,
-
 ,,,,
 meets_exclusion_criteria,"ami_at_adm|bleeding_at_adm|ischemic_stroke_at_adm|existing_afib|existing_flutter|existing_dvt|existing_pe|existing_anticoag","Binary",0,"Vector of true/false to identify excluded subjects"
 ,,,,
@@ -87,5 +86,3 @@ earliest_healthevent_date2,"ifelse(is.na(earliest_healthevent_date), as_date('99
 lowdose_date1_beforehe,"ifelse(lowdose_anticoag_dvt %in% 1 & during_anticoag_dvt_date<earliest_healthevent_date2, during_anticoag_dvt_date, NA)","Binary",0,
 lowdose_date2_beforehe,"ifelse(during_subq_lmwh_low_date < earliest_healthevent_date2, during_subq_lmwh_low_date, NA)","Binary",0,
 earliest_lowdose_date_beforehe,”min(lowdose_date1_beforehe, lowdose_date2_beforehe, na.rm = TRUE)","Date",1,
-earliest_lowdose_date_beforehe2,"ifelse(earliest_lowdose_date_beforehe == -Inf, NA, earliest_lowdose_date_beforehe)","Date",0,
-
