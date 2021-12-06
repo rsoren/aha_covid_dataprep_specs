@@ -2,6 +2,8 @@ variable_name,label,notes
 age_years,"Age (years)",
 sex_male,"Sex, male",
 admission_bmi,"Body-mass index",
+any_nonmissing_anticoag_dates,"Non-missing date for initiating anti-coagulation therapy",
+any_during_anticoag_whatsoever,"Any anti-coagulation therapy prescribed during hospitalization",
 hispanic_race,"Hispanic",
 nonhispanic_white_race,"Non-Hispanic White",
 nonhispanic_black_race,"Non-Hispanic Black",
