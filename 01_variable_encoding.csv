@@ -110,14 +110,14 @@ ISCHSTR,2,ischemic_stroke_ichemorrhage,0,"Binary","Original level 2 represents '
 STRDIAGDT,NA,ischemic_stroke_ichemorrhage_date,NA,"Date",
 ANTICOAG,1,prior_anticoag,1,"Binary",
 ANTICOAG,2,prior_anticoag,0,"Binary","Original level 2 represents 'No/ND'"
-ANTICOAGTX_1,1,prior_anticoag_dti,1,"Binary","Level 1 is 'Direct Thrombin Inhibitor'"
-ANTICOAGTX_1,0,prior_anticoag_dti,0,"Binary",
-ANTICOAGTX_2,1,prior_anticoag_fxi,1,"Binary","Level 2 is 'Factor Xa Inhibitor'"
-ANTICOAGTX_2,0,prior_anticoag_fxi,0,"Binary",
-ANTICOAGTX_3,1,prior_anticoag_warfarin,1,"Binary","Level 3 is 'Warfarin'"
-ANTICOAGTX_3,0,prior_anticoag_warfarin,0,"Binary",
-ANTICOAGTX_4,1,prior_anticoag_other,1,"Binary","Level 4 is 'Other Anticoagulant'"
-ANTICOAGTX_4,0,prior_anticoag_other,0,"Binary",
+ANTICOAGTX_01,1,prior_anticoag_dti,1,"Binary","Level 1 is 'Direct Thrombin Inhibitor'"
+ANTICOAGTX_01,0,prior_anticoag_dti,0,"Binary",
+ANTICOAGTX_02,1,prior_anticoag_fxi,1,"Binary","Level 2 is 'Factor Xa Inhibitor'"
+ANTICOAGTX_02,0,prior_anticoag_fxi,0,"Binary",
+ANTICOAGTX_03,1,prior_anticoag_warfarin,1,"Binary","Level 3 is 'Warfarin'"
+ANTICOAGTX_03,0,prior_anticoag_warfarin,0,"Binary",
+ANTICOAGTX_04,1,prior_anticoag_other,1,"Binary","Level 4 is 'Other Anticoagulant'"
+ANTICOAGTX_04,0,prior_anticoag_other,0,"Binary",
 ANTCOAGPRES,1,during_anticoag_prescribed,"Direct Thrombin Inhibitor",Categorical,
 ANTCOAGPRES,2,during_anticoag_prescribed,"Factor Xa Inhibitor",Categorical,
 ANTCOAGPRES,3,during_anticoag_prescribed,"Warfarin",Categorical,
