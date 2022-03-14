@@ -82,7 +82,7 @@ highest_dose_general,"ifelse(any_fulldose_anticoag %in% 1, 'Full', highest_dose_
 had_healthevent_during,"during_afib %in% 1 | during_ami_any %in% 1 | during_dvt %in% 1 | during_pe %in% 1 | clinical_bleeding_transfusion %in% 1 | ischemic_stroke_ichemorrhage %in% 1","Binary",0,
 earliest_healthevent_date,"min(during_afib_date, during_ami_date, during_dvt_date, during_pe_date, clinical_bleeding_transfusion_date, ischemic_stroke_ichemorrhage_date, na.rm = TRUE)","Date",1,"min_narm"
 ,,,,
-earliest_healthevent_date2,"ifelse(is.na(earliest_healthevent_date), as_date('9999-12-31'), earliest_healthevent_date)","Date",0,
+earliest_healthevent_date2,"ifelse(is.na(earliest_healthevent_date), as_date('9999-12-31'), as_date(earliest_healthevent_date))","Date",0,
 ,,,,
 lowdose_date1_beforehe,"ifelse(lowdose_anticoag_dvt %in% 1 & during_anticoag_dvt_date<earliest_healthevent_date2, during_anticoag_dvt_date, NA)","Binary",0,
 lowdose_date2_beforehe,"ifelse(during_subq_lmwh_low_date < earliest_healthevent_date2, during_subq_lmwh_low_date, NA)","Binary",0,
