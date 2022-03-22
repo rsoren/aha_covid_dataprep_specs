@@ -15,11 +15,11 @@ existing_anticoag,"prior_anticoag %in% 1 | prior_anticoag_type_is_specified %in%
 ami_at_adm,"during_ami_any %in% 1 & during_ami_date==admission_date","Binary",0,
 bleeding_at_adm,"clinical_bleeding_transfusion %in% 1 & clinical_bleeding_transfusion_date==admission_date","Binary",0,
 ischemic_stroke_at_adm,"ischemic_stroke_ichemorrhage %in% 1 & ischemic_stroke_ichemorrhage_date==admission_date","Binary",0,
-has_intthrom_at_adm,"during_intthrom %in% 1 & during_intthrom_date==admission_date","Binary",0,
-has_acutelimbisch_at_adm,"during_acutelimbisch %in% 1 & during_acutelimbisch_date==admission_date","Binary",0,
+intthrom_at_adm,"during_intthrom %in% 1 & during_intthrom_date==admission_date","Binary",0,
+acutelimbisch_at_adm,"during_acutelimbisch %in% 1 & during_acutelimbisch_date==admission_date","Binary",0,
 ,,,,
 exclusion1,"ami_at_adm|bleeding_at_adm|ischemic_stroke_at_adm|existing_afib|existing_flutter|existing_dvt|existing_pe|existing_anticoag","Binary",0,"Vector of true/false to identify excluded subjects"
-exclusion2,"has_intthrom_at_admission|has_acutelimbisch_at_admission","Binary",0,"Vector of true/false to identify excluded subjects"
+exclusion2,"intthrom_at_adm|acutelimbisch_at_adm","Binary",0,"Vector of true/false to identify excluded subjects"
 meets_exclusion_criteria,"exclusion1|exclusion2","Binary",0,"Vector of true/false to identify excluded subjects"
 ,,,,
 hispanic_race,"race == 'Hispanic'","Binary",0,
