@@ -72,8 +72,8 @@ fulldose_date1_beforeicu,"ifelse(during_subq_lmwh_full %in% 1 & during_subq_lmwh
 fulldose_date2_beforeicu,"ifelse(during_subq_uh %in% 1 & during_subq_uh_date < patient_entered_icu_date2, during_subq_uh_date, NA)","Date",0,
 fulldose_date3_beforeicu,"ifelse(during_subq_paruh %in% 1 & during_subq_paruh_date < patient_entered_icu_date2, during_subq_paruh_date, NA)","Date",0,
 fulldose_date4_beforeicu,"ifelse(fulldose_anticoag_dvt %in% 1 & during_anticoag_dvt_date < patient_entered_icu_date2, during_anticoag_dvt_date, NA)","Date",0,
-fulldose_date5_beforeicu,"ifelse(during_argtroban %in% 1 & during_argatroban_date < patient_entered_icu_date2, during_anticoag_dvt_date, NA)","Date",0,
-fulldose_date6_beforeicu,"ifelse(during_bivalirudin %in% 1 & during_bivalirudin_date < patient_entered_icu_date2, during_anticoag_dvt_date, NA)","Date",0,
+fulldose_date5_beforeicu,"ifelse(during_argtroban %in% 1 & during_argatroban_date < patient_entered_icu_date2, during_argatroban_date, NA)","Date",0,
+fulldose_date6_beforeicu,"ifelse(during_bivalirudin %in% 1 & during_bivalirudin_date < patient_entered_icu_date2, during_bivalirudin_date, NA)","Date",0,
 latest_fulldose_date_beforeicu,"max(fulldose_date1_beforeicu, fulldose_date2_beforeicu, fulldose_date3_beforeicu, fulldose_date4_beforeicu, fulldose_date5_beforeicu, fulldose_date6_beforeicu, na.rm = TRUE)","Date",1,"max_narm"
 latest_fulldose_date_beforeicu2,"ifelse(latest_fulldose_date_beforeicu == -Inf, NA, latest_fulldose_date_beforeicu)","Date",0,
 ,,,,
@@ -105,6 +105,8 @@ fulldose_date1_beforehe,"ifelse(during_subq_lmwh_full %in% 1 & during_subq_lmwh_
 fulldose_date2_beforehe,"ifelse(during_subq_uh %in% 1 & during_subq_uh_date < earliest_healthevent_date2, during_subq_uh_date, NA)","Date",0,
 fulldose_date3_beforehe,"ifelse(during_subq_paruh %in% 1 & during_subq_paruh_date < earliest_healthevent_date2, during_subq_paruh_date, NA)","Date",0,
 fulldose_date4_beforehe,"ifelse(fulldose_anticoag_dvt %in% 1 & during_anticoag_dvt_date < earliest_healthevent_date2, during_anticoag_dvt_date, NA)","Date",0,
+fulldose_date5_beforehe,"ifelse(during_argtroban %in% 1 & during_argatroban_date < earliest_healthevent_date2, during_argatroban_date, NA)","Date",0,
+fulldose_date6_beforehe,"ifelse(during_bivalirudin %in% 1 & during_bivalirudin_date < earliest_healthevent_date2, during_bivalirudin_date, NA)","Date",0,
 latest_fulldose_date_beforehe,"max(fulldose_date1_beforehe, fulldose_date2_beforehe, fulldose_date3_beforehe, fulldose_date4_beforehe, na.rm = TRUE)","Date",1,"max_narm"
 latest_fulldose_date_beforehe2,"ifelse(latest_fulldose_date_beforehe == -Inf, NA, latest_fulldose_date_beforehe)","Date",0,
 ,,,,
