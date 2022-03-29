@@ -1,5 +1,6 @@
 orig_var,orig_level,new_var,new_level,type,notes
 FACILITY_DISPLAY_ID,NA,facility_display_id,NA,"ID",
+FACILITY_ID,NA,facility_id,NA,"ID",
 PATIENT_DISPLAY_ID,NA,patient_display_id,NA,"ID",
 CASE_ID,NA,case_id,NA,"ID",
 AHA_ID,NA,aha_id,NA,"ID",
