@@ -22,7 +22,7 @@ yes_anticoag_but_missing_date,"n_yes_anticoag_but_missing_date > 0","Binary",0,"
 gt2_missing_anticoag_val,"n_missing_anticoag_val > 2","Binary",0,"See code in 'aha_covid_anticoagulation' repo for definition"
 ,,,,
 exclusion1,"ami_at_adm|bleeding_at_adm|ischemic_stroke_at_adm|existing_afib|existing_flutter|existing_dvt|existing_pe|existing_anticoag","Binary",0,"Vector of true/false to identify excluded subjects"
-exclusion2,"intthrom_at_adm|acutelimbisch_at_adm|yes_anticoag_but_missing_date|gt3_missing_anticoag_val","Binary",0,"Vector of true/false to identify excluded subjects"
+exclusion2,"intthrom_at_adm|acutelimbisch_at_adm|yes_anticoag_but_missing_date|gt2_missing_anticoag_val","Binary",0,"Vector of true/false to identify excluded subjects"
 meets_exclusion_criteria,"exclusion1|exclusion2","Binary",0,"Vector of true/false to identify excluded subjects"
 ,,,,
 hispanic_race,"race == 'Hispanic'","Binary",0,
