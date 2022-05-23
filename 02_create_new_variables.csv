@@ -125,7 +125,7 @@ any_nonmissing_anticoag_dates,"nonmissing_anticoag_dates1 | nonmissing_anticoag_
 ,,,,
 any_anticoag1,"during_anticoag_prescribed %in% c('Direct Thrombin Inhibitor','Factor Xa Inhibitor','Warfarin','Other Anticoagulant')","Binary",0,
 any_anticoag2,"during_anticoag_dvt_type %in% c('Direct Thrombin Inhibitor','Factor Xa Inhibitor','Warfarin','Other Anticoagulant')","Binary",0,
-any_anticoag3,"during_anticoag_dvt %in% 1 | during_subq_lmwh_low %in% 1 | during_subq_lmwh_intermediate %in% 1","Binary",0,
+any_anticoag3,"during_subq_lmwh_low %in% 1 | during_subq_lmwh_intermediate %in% 1","Binary",0,
 any_anticoag4,"during_subq_lmwh_full %in% 1 | during_subq_uh %in% 1 | during_subq_paruh %in% 1","Binary",0,
 any_anticoag5,"during_doac %in% 1 | during_warfarin %in% 1 | during_argatroban %in% 1 | during_bivalirudin %in% 1","Binary",0,
 any_during_anticoag_whatsoever,"any_anticoag2|any_anticoag3|any_anticoag4|any_anticoag5","Binary",0,"Intentionally excluding 'any_anticoag1' in this version"
