@@ -110,7 +110,7 @@ fulldose_date3_beforehe,"ifelse(during_subq_paruh %in% 1 & during_subq_paruh_dat
 fulldose_date4_beforehe,"ifelse(fulldose_anticoag_dvt %in% 1 & during_anticoag_dvt_date < earliest_healthevent_date2, during_anticoag_dvt_date, NA)","Date",0,
 fulldose_date5_beforehe,"ifelse(during_argatroban %in% 1 & during_argatroban_date < earliest_healthevent_date2, during_argatroban_date, NA)","Date",0,
 fulldose_date6_beforehe,"ifelse(during_bivalirudin %in% 1 & during_bivalirudin_date < earliest_healthevent_date2, during_bivalirudin_date, NA)","Date",0,
-latest_fulldose_date_beforehe,"max(fulldose_date1_beforehe, fulldose_date3_beforehe, fulldose_date4_beforehe, na.rm = TRUE)","Date",1,"max_narm"
+latest_fulldose_date_beforehe,"max(fulldose_date1_beforehe, fulldose_date3_beforehe, fulldose_date4_beforehe, fulldose_date5_beforehe, fulldose_date6_beforehe, na.rm = TRUE)","Date",1,"max_narm"
 latest_fulldose_date_beforehe2,"ifelse(latest_fulldose_date_beforehe == -Inf, NA, latest_fulldose_date_beforehe)","Date",0,
 ,,,,
 highest_dose_beforehe,"as.character(substitute(None))","Categorical",0,
