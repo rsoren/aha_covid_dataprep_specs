@@ -199,3 +199,6 @@ CAUSDTH,3,cause_of_death,"HF",Categorical,
 CAUSDTH,4,cause_of_death,"Respiratory",Categorical,
 CAUSDTH,5,cause_of_death,"Stroke",Categorical,
 CAUSDTH,6,cause_of_death,"Other",Categorical,
+HOSPVENT,NA,hospvent2,NA,Continuous,"Added per request from Grace Li; not necessarily a continuous variable"
+MEANSTRANS,NA,meanstrans2,NA,Continuous,"Added per request from Grace Li; not necessarily a continuous variable"
+GLUCOCOR,NA,glucocor2,NA,Continuous,"Added per request from Grace Li; not necessarily a continuous variable"
